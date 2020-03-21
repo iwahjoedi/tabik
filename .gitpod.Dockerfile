@@ -12,6 +12,8 @@ FROM alpine:3.11
 
 #RUN sudo apt-get -q update
 RUN apk --no-cache add \
+    bash \
+    curl \
     vim \
     nodejs \
     npm \
