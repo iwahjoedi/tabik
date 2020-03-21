@@ -11,3 +11,14 @@ USER gitpod
 # More information: https://www.gitpod.io/docs/config-docker/
 
 #RUN sudo apt-get -q update
+RUN apk --no-cache add \
+    vim \
+    nodejs \
+    npm \
+    python \
+    python-dev \
+    py-pip \
+    build-base \
+    && pip install virtualenv 
+    
+RUN curl -sLf https://spacevim.org/install.sh | bash
