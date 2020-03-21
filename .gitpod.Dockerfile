@@ -1,7 +1,7 @@
 #FROM gitpod/workspace-mysql
 FROM alpine:3.11 
 
-USER gitpod
+#USER gitpod
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
