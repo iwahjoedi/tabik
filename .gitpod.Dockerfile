@@ -10,4 +10,4 @@ USER gitpod
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN sudo apt-get -q update
+#RUN sudo apt-get -q update
