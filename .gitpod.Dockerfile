@@ -1,5 +1,5 @@
 #FROM gitpod/workspace-mysql
-FROM zoobab/tinycore-x64 
+FROM alpine:3.11 
 
 USER gitpod
 
