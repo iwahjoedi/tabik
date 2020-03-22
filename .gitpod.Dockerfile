@@ -15,6 +15,7 @@ RUN apk --no-cache add \
     bash \
     curl \
     vim \
+    git 
     nodejs \
     npm \
     python \
