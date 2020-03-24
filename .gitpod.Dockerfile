@@ -17,7 +17,7 @@ RUN apk --no-cache add \
     curl \
     neovim \
     git \
-    tig 
+    tig \
     python \
     python-dev \
     py-pip \
