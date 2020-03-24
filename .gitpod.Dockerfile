@@ -14,7 +14,12 @@ ENV LANG=en_US.UTF-8
 ARG NODE_VER=12.8.1
 ARG NPM_VER=6
 
+
+# install Spacevim
 RUN curl -sLf https://spacevim.org/install.sh | bash
 
-RUN npm i firebase-tools
+COPY init.toml $HOME/.Spacevim.d/init.toml
+
+# install Firebase CLI
+RUN npm install -g firebase-tools
 
