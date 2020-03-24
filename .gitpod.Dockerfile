@@ -22,7 +22,7 @@ RUN apk --no-cache add \
     python-dev \
     py-pip \
     build-base \
-    asciidoctor
+    asciidoctor \
     && pip install virtualenv 
 
 ENV LANG=en_US.UTF-8
