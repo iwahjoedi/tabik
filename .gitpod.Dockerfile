@@ -14,14 +14,21 @@ FROM alpine:3.11
 RUN apk --no-cache add \
     bash \
     curl \
-    vim \
+    neovim \
     git \
+    tig 
     nodejs \
     npm \
     python \
     python-dev \
     py-pip \
     build-base \
+    asciidoctor
     && pip install virtualenv 
+
+ENV LANG=en_US.UTF-8
     
 RUN curl -sLf https://spacevim.org/install.sh | bash
+
+
+RUN 
