@@ -17,8 +17,12 @@ ARG NPM_VER=6
 
 # install Spacevim
 RUN curl -sLf https://spacevim.org/install.sh | bash
-
 COPY init.toml $HOME/.Spacevim.d/init.toml
+
+# set user to avoid permission issues
+RUN mkdir /home/gitpod/.npm-global
+ENV PATH=/home/gitpod/.npm-global/bin:$PATH
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
 # install Firebase CLI
 RUN npm install -g firebase-tools
