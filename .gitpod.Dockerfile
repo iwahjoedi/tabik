@@ -22,8 +22,8 @@ COPY init.toml $HOME/.Spacevim.d/init.toml
 # set user to avoid permission issues
 RUN mkdir /home/gitpod/.npm-global
 ENV PATH=/home/gitpod/.npm-global/bin:$PATH
-ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
+ENV NPM_CONFIG_PREFIX=/home/gitpod/.npm-global
 
 # install Firebase CLI
-RUN npm install -g firebase-tools
+RUN npm install -g firebase-tools preact-cli tailwindcss zepto
 
